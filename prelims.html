@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laureta/Prelims</title>
+    <style>
+        body {
+            background: url("bg2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: transparent;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+           background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+           background-blend-mode: overlay;
+          -webkit-background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          -webkit-background-blend-mode: overlay;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 160px;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            width: 500px; /* Adjust card width as needed */
+            height: 300px; /* Adjust card height as needed */
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 70%; /* Adjust image size as needed */
+            border-radius: 5%; /* Adjust border-radius for circular images */
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .card h2,
+        .card p {
+            text-align: justify;
+            margin: 10px;
+            color: white;
+
+        }
+        .card-link {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Prelims Portfolio</h1>
+    </header>
+    <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="prelims.html" class="nav-link">Prelims</a>
+    <a href="midterms.html" class="nav-link">Midterms</a>
+    <a href="finals.html" class="nav-link">Finals</a>
+    </nav>
+    <main class="main">
+        <a href="prelims/index.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/prelims.png" alt="act1 Image">
+                <h2>Activity 1</h2>
+                <p>This activity is about introduction of HTML containing a header and images with head lins and paragraphs.</p>
+            </div>
+        </a>
+        <a href="prelims/assignments\Assignment.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/assignment.png" alt="act1 Image">
+                <h2>Assignment</h2>
+                <p>This activity is about layouting using the table, using the rowspan and colspan.</p>
+            </div>
+        </a>
+        <a href="prelims/sample.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/sample.png" alt="act1 Image">
+                <h2>Input System</h2>
+                <p>This activity is about using textbox in order to receive input from the user.</p>
+            </div>
+        </a>
+        <a href="prelims/Activity1/index.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/crypto.png" alt="act1 Image">
+                <h2>Underlying Webpage</h2>
+                <p>This activity is about using table with images and description along with anchor tags containing links to underlying webpages</p>
+            </div>
+        </a>
+         <a href="prelims/WP/schedule.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/sched.png" alt="act1 Image">
+                <h2>Schedule</h2>
+                <p>This activity is containing our second sem schedule which focuses on coding a table with rowspan and colspan.</p>
+            </div>
+        </a>
+        <a href="prelims/exam.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/exam.png" alt="act1 Image">
+                <h2>EXAM</h2>
+                <p>This website is our preliminary lab exam which contains form that accepts input from the user.</p>
+            </div>
+        </a>
+        
+
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CALCULATOR-LAURETA</title>
+	<style>
+		*{
+			font-family: sans-serif;
+		}
+	
+	#calc{
+		width: 500px;
+		border: solid 1px black;
+		text-align: center;
+		padding: 10px;
+		margin: auto;
+	}
+	#calc input{
+		display: block;
+		margin: auto;
+		height: 30pt;
+		width: 450px;
+		font-size: 20pt;
+	}
+	button{
+		width: 60pt;
+		height: 35pt;
+		margin: 20px;
+	}
+	#result{
+		margin: auto;
+		font-size: 20pt;
+		text-align: center;
+	}
+
+	</style>
+	<script>
+		function sum() {
+    
+			var num1 = parseInt(document.getElementById("int1").value)
+			var num2 = parseInt(document.getElementById("int2").value)
+			var result
+
+        result = num1 + num2;
+        
+
+    document.getElementById("result").innerHTML = "The Sum is: " + result;
+  }
+  	function diff() {
+    
+			var num1 = parseInt(document.getElementById("int1").value)
+			var num2 = parseInt(document.getElementById("int2").value)
+			var result
+    
+        result = num1 - num2;
+        
+
+    document.getElementById("result").innerHTML = "The Difference is: " + result;
+  }
+  	function prod() {
+    
+			var num1 = parseInt(document.getElementById("int1").value)
+			var num2 = parseInt(document.getElementById("int2").value)
+			var result
+    
+        result = num1 * num2;
+        
+
+    document.getElementById("result").innerHTML = "The Product is: " + result;
+  }
+
+  	function quo() {
+    
+			var num1 = parseInt(document.getElementById("int1").value)
+			var num2 = parseInt(document.getElementById("int2").value)
+			var result
+    
+        result = num1 / num2;
+        
+
+    document.getElementById("result").innerHTML = "The Quotient is: " + result;
+  }
+
+    
+	</script>
+		
+</head>
+<body id="bdy">
+<br>
+
+<div id="calc">
+
+<h1>Calculator</h1>
+
+<input id="int1"></input>
+<br>
+<input id="int2"></input>
+<br>
+
+<button id="addBtn" onclick="sum()">+</button>
+<button id="subBtn" onclick="diff()">-</button>
+<button id="mulBtn" onclick="prod()">X</button>
+<button id="divBtn" onclick="quo()">/</button>
+
+</div>
+<br>
+<div id="result">
+</div>
+
+
+</body>
+</html>

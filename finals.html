@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laureta/Finals</title>
+    <style>
+        body {
+            background: url("bg2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: transparent;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+           background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+           background-blend-mode: overlay;
+          -webkit-background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          -webkit-background-blend-mode: overlay;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 160px;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+            width: 500px; /* Adjust card width as needed */
+            height: 300px; /* Adjust card height as needed */
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 20px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .card img {
+            width: 70%; /* Adjust image size as needed */
+            border-radius: 5%; /* Adjust border-radius for circular images */
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .card h2,
+        .card p {
+            text-align: justify;
+            margin: 10px;
+            color: white;
+
+        }
+        .card-link {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Finals Portfolio</h1>
+    </header>
+    <nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="prelims.html" class="nav-link">Prelims</a>
+    <a href="midterms.html" class="nav-link">Midterms</a>
+    <a href="finals.html" class="nav-link">Finals</a>
+    </nav>
+    <main class="main">
+        <a href="finals/lessonJS.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/lessonjs.png" alt="act1 Image">
+                <h2>Lesson JS</h2>
+                <p>This activity is a sample of uses of javascript, more on different buttons and functions.</p>
+            </div>
+        </a>
+        <a href="finals/Lupang Hinirang.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/lyrics.png" alt="act1 Image">
+                <h2>Lyrics</h2>
+                <p>This activity contains the Lupang Hinirang lyrics along with different buttons containing JS functions.</p>
+            </div>
+        </a>
+        <a href="finals/Calculator.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/calc1.png" alt="act1 Image">
+                <h2>Calculator MINI</h2>
+                <p>This activity is a calculator containing to input box and 4 buttons operation coded in js.</p>
+            </div>
+        </a>
+        <a href="finals/Calculator with Buttons.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/calc.png" alt="act1 Image">
+                <h2>Calculator</h2>
+                <p>This activity is also a calculator but looks actual calculator with buttons coded with more complicated JS codes.</p>
+            </div>
+        </a>
+        <a href="finals/rowcol.html" target="_self" class="card-link">
+            <div class="card" id="act1">
+                <img src="images/row.png" alt="act1 Image">
+                <h2>Row Col</h2>
+                <p>Using the prompt accept 2 inputs and displaying a table with different rows and columns depending on the input.</p>
+            </div>
+        </a>
+       
+
+        
+    </main>
+</body>
+</html>

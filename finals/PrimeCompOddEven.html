@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PrimeCompOddEven</title>
+<style>
+
+</style>
+<script>
+
+var start = parseInt(prompt("Enter the start number:"));
+var number = parseInt(prompt("Enter the end number:"));
+var i = start;
+
+for (i; i <= number; i++) {
+    var count = 0;
+    document.write(i + " ");
+    for (var x = 1; x <= i; x++) {
+        if(i % x == 0){
+            count++
+        }
+    }
+    if(i % 2 == 0){
+        document.write("EVEN ");
+    }
+    else{
+        document.write("ODD ");
+    }
+
+    if(count <= 2){
+        document.write("PRIME <br>")
+    }
+    else{
+        document.write("COMPOSITE <br>")
+    }
+}
+</script>
+</head>
+<body>
+</body>
+</html>

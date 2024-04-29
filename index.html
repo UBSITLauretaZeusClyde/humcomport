@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	
+	<style>
+		body {
+			background: url("bg2.jpg") no-repeat center center fixed;
+			background-size: cover;
+			color: #fff;
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		.header {
+			background-color: transparent;
+			height: 100px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1000;
+		}
+		.header h1 {
+			margin: 0;
+			color: #fff;
+			font-size: 3rem;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+		.nav {
+		    display: flex;
+		    justify-content: space-around;
+		    align-items: center;
+		    height: 60px;
+		   background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+		   background-blend-mode: overlay;
+		  -webkit-background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+		  -webkit-background-blend-mode: overlay;
+		    position: fixed;
+		    top: 100px;
+		    left: 0;
+		    width: 100%;
+		    z-index: 1000;
+		}
+
+		.nav-link {
+		    color: #fff;
+		    text-decoration: none;
+		    font-size: 1.2rem;
+		    padding: 10px;
+		    transition: all 0.3s ease;
+		}
+
+		.nav-link:hover {
+		    background-color: rgba(255, 255, 255, 0.15);
+		    color: #fff;
+		}
+		.main {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+			margin-top: 160px;
+		}
+		.card {
+			background-color: rgba(255, 255, 255, 0.15);
+		    border-radius: 10px;
+		    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+		    width: 500px;
+		    height: 600px;
+		    margin: 20px;
+		    display: flex;
+		    flex-direction: column;
+		    align-items: center;
+		    justify-content: center;
+		    text-align: center;
+		    transition: all 0.3s ease;
+		    backdrop-filter: blur(10px);
+		    -webkit-backdrop-filter: blur(10px);
+		}
+		.card:hover {
+			transform: scale(1.05);
+		}
+		.card h2 {
+			margin: 0;
+			margin-bottom: 10px;
+			font-size: 1.5rem;
+			text-decoration: none; 
+			color: white;
+		}
+		.card p {
+			margin: 0;
+			margin-top: 10px;
+			font-size: 0.9rem;
+			text-decoration: none; 
+			color: white;
+		}
+		.card-link {
+  			text-decoration: none;
+ 			 color: #fff;
+		}
+		.card img {
+            width: 80%; /* Adjust image size as needed */
+            border-radius: 5%; /* Adjust border-radius for circular images */
+            background: rgba(255, 255, 255, 0.2);
+
+        }
+	</style>
+</head>
+<body>
+	<header class="header">
+		<h1>Laureta Portfolio</h1>
+	</header>
+
+	<nav class="nav">
+    <a href="" class="nav-link">Home</a>
+    <a href="prelims.html" class="nav-link">Prelims</a>
+    <a href="midterms.html" class="nav-link">Midterms</a>
+    <a href="finals.html" class="nav-link">Finals</a>
+	</nav>
+
+	<main class="main">
+		<a href="prelims.html" target="_self" class="card-link">
+    		<div class="card" id="prelim">
+    			<img src="bg.jpg" alt="act1 Image">
+    			<br><br><br>
+        		<h2>PRELIMS</h2>
+        		<p>The activities for my prelims are inside this card, click me to view all the activities I developed.</p>
+	    	</div>
+		</a>
+		<a href="midterms.html" target="_self" class="card-link">
+		    <div class="card" id="midterms">
+		    	<img src="bg.jpg" alt="act1 Image">
+		    	<br><br><br>
+		        <h2>MIDTERMS</h2>
+		        <p>The activities for my midterms are inside this card, click me to view all the activities I developed.</p>
+		    </div>
+		</a>
+		<a href="finals.html" target="_self" class="card-link">
+		    <div class="card" id="finals">
+		    	<img src="bg.jpg" alt="act1 Image">
+		    	<br><br><br>
+		        <h2>FINALS</h2>
+		        <p>The activities for my finals are inside this card, click me to view all the activities I developed.</p>
+		    </div>
+		</a>
+</main>
+</body>
+</html>

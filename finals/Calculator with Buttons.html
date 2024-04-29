@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CALCULATOR-LAURETA</title>
+	<style>
+		*{
+			font-family: sans-serif;
+			margin: 0px;
+			padding: 0px;
+		}
+	
+	table{
+		width: 500px;
+		height: 700px;
+		border: solid 1px none;
+		text-align: center;
+		margin: auto;
+		background-color: #585353;
+		border-radius: 10px;
+		margin-top: 40px;
+	}
+	input{
+		background-color: lightgray;
+		margin: auto;
+		margin-top: -50px;
+		margin-bottom: -20px;
+		height: 120px;
+		width: 90%;
+		font-size: 60pt;
+		border: none;
+		border-radius: 10px;
+		text-align: right;
+		padding-right: 20px;
+		font-weight: bold;
+		color: black;
+		box-shadow:inset 0 0 5px 5px #888;
+	}
+	button{
+		margin-top: -50px;
+		margin-bottom: -50px;
+		width: 100px;
+		height: 100px;
+		font-weight: bold;
+		font-size: 60pt;
+		border-radius: 10px;
+		cursor: pointer;
+
+	}
+	button:hover{
+		size: +10px;
+	}
+	
+	#result{
+		margin: auto;
+		font-size: 40pt;
+		text-align: center;
+	}
+	#equals{
+		background-color: #ff751a;
+	}
+
+	</style>
+	<script>
+
+    var num1 = 0;
+    var result = 0;
+    var operator = "";
+
+    function calc(num) {
+        document.getElementById("input").value += num;
+    }
+
+    function setOperator(op) {
+        operator = op;
+        num1 = parseFloat(document.getElementById("input").value);
+        document.getElementById("input").value = "";
+    }
+
+    function resultShow(){
+        var num2 = parseFloat(document.getElementById("input").value);
+        switch (operator) {
+            case '+':
+                result = num1 + num2;
+                break;
+            case '-':
+                result = num1 - num2;
+                break;
+            case '*':
+                result = num1 * num2;
+                break;
+            case '/':
+                if (num2 !== 0) {
+                    result = num1 / num2;
+                } else {
+                    result = "Error: Division by zero";
+                }
+                break;
+        }
+        document.getElementById("input").value = result;
+    }
+
+</script>
+
+		
+</head>
+<body id="bdy">
+<br>
+
+<table>
+	<tr>
+		<td colspan="4"><input id="input" disabled="disabled" value=""></input></td>
+	</tr>
+
+	<tr>
+		<td><button id="no7" onclick="calc(7);">7</button></td>
+		<td><button id="no8" onclick="calc(8);">8</button></td>
+		<td><button id="no9" onclick="calc(9);">9</button></td>
+		<td><button id="divide" onclick="setOperator('/');">/</button></td>
+	</tr>
+
+	<tr>
+		<td><button id="no4" onclick="calc(4);">4</button></td>
+		<td><button id="no5" onclick="calc(5);">5</button></td>
+		<td><button id="no6" onclick="calc(6);">6</button></td>
+		<td><button id="multiply" onclick="setOperator('*');">×</button></td>
+	</tr>
+
+	<tr>
+		<td><button id="no7" onclick="calc(1);">1</button></td>
+		<td><button id="no8" onclick="calc(2);">2</button></td>
+		<td><button id="no9" onclick="calc(3);">3</button></td>
+		<td><button id="minus" onclick="setOperator('-');">-</button></td>
+	</tr>
+
+	<tr>
+		<td><button id="zero" onclick="calc(0);">0</button></td>
+		<td><button id="dot" onclick="calc('.');">.</button></td>
+		<td><button id="plus" onclick="setOperator('+');">+</button></td>
+		<td><button id="equals" onclick="resultShow();">=</button></td>
+	</tr>
+
+</table>
+
+
+</body>
+</html>

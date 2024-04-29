@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS-LAURETA</title>
+	<style>
+		button{
+			border-radius: 20px;
+			width: 100px;
+			height: 50px;
+		}
+	</style>
+	<!-- External JS 
+	<script type="text/javascript" src="js/jsFunction.js"></script>
+    -->
+	<!-- INTERNAL JS -->
+	<script type="text/javascript">
+		function getDate(){
+				document.write(Date());
+		}
+		function bgNone(){
+			document.getElementById("backColor").bgColor = "white";
+		}
+		function clickButton(){
+			document.getElementById("message").innerHTML = "hello";
+		}
+		function clickAlert(){
+			alert('Hello World')
+		}
+		//BACKGROUND COLOR
+		function bgRed(){
+			document.getElementById("backColor").bgColor = "red";
+		}
+		function bgGreen(){
+			document.getElementById("backColor").bgColor = "green";
+		}
+		function bgBlue(){
+			document.getElementById("backColor").bgColor = "blue";
+		}
+		function bgRandom(){
+			var ranColor = Math.floor(Math.random()*16777215).toString(16);
+			document.getElementById("backColor").bgColor = ranColor;
+		}
+		//FONT COLOR
+		function textRed(){
+			document.getElementById("right-panel").style.color = "red";
+		}
+		function textGreen(){
+			document.getElementById("right-panel").style.color = "green";
+		}
+		function textBlue(){
+			document.getElementById("right-panel").style.color = "blue";
+		}
+		function txtRandom(){
+    		var ranColor = "#" + Math.floor(Math.random()*16777215).toString(16);
+    		document.getElementById("right-panel").style.color = ranColor;
+		}
+		
+	</script>
+		
+</head>
+<body id="backColor">
+	<h1>THE DATE TODAY IS : 
+		<script type="text/javascript">
+			getDate();
+		</script>
+	</h1>
+
+<br>
+
+	<button onclick="clickButton();bgNone();"> Click Me! </button>
+		<div id="message">
+		</div>
+
+<br>
+	<button onclick="clickAlert();"> Alert Button! </button>
+
+<br>
+<br>
+<div id="left-panel" style="width: 40%; float: left;">
+	<button onclick="bgRed();">RED</button>
+	<button onclick="bgGreen();">GREEN</button>
+	<button onclick="bgBlue();">BLUE</button>
+<br>
+<br>
+	<button onclick="textRed();">RED</button>
+	<button onclick="textGreen();">GREEN</button>
+	<button onclick="textBlue();">BLUE</button>
+<br>
+<br>
+	<button onclick="bgRandom();">Random BG</button>
+	<button onclick="txtRandom();">Random FC</button>
+</div>
+	<div id="right-panel" style="width: 40%; float: right;">
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+		dsadasdasdasdasdasdsadasdasdasdasdasvasdbasf
+</div>
+</body>
+</html>

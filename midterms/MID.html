@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laureta</title>
+<style>
+    * {
+        box-sizing: border-box;
+        background-color: #fff;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        max-width: 1920px;
+        width: 100%;
+        margin: auto;
+    }
+
+/*-----------------------Navbar----------------------*/ 
+
+    .navbar {
+        max-width: 1800px;
+        width: 100%;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        font-family: "Gill Sans Extrabold", sans-serif;
+        margin: 0 1px;
+        font-size: 20pt;
+        color: black;
+        padding: 6px;
+    }
+
+    .navbar a:hover {
+        background-color: #338265;
+        border-radius: 20px;
+        color: white;
+        border: 1px solid #294c3b;
+    }
+
+    .navbar .cartlugu:hover{
+        background-color: #fff;
+    }
+
+    .language-dropdown {
+        display: flex;
+        align-items: center;
+    }
+
+    .language-dropdown select {
+        border: none;
+        padding: 5px;
+        font-size: 20pt;
+    }
+
+    .logo {
+        width: 90px;
+        height: 90px;
+        margin-right: 200px;
+    }
+    .cart-logo {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+/*-----------------------First Image----------------------*/ 
+
+    .firstimg img{
+        width: 1800px;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+    }
+
+    .firstimg-container {
+        margin-top: 20px; /* Adjust as needed */
+    }
+
+/*-----------------------2 Column----------------------*/ 
+
+     .text2 {
+        width: 1800px;
+        text-align: center;
+        margin: 15px;
+        color: gray;
+        font-weight: bold;
+        font-size: 40pt;
+    }
+
+    .text2 img {
+        height: 80px;
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+
+    .Secimg{
+            text-align: center; 
+            margin-left: 15px;    
+        }
+
+        .Secimg div{
+            
+            display: inline-block;
+            margin: auto;
+        }
+        .one{
+            width: 900px;
+            height: 1000px;
+            border-radius: 20px;
+            background-color: #cee4b5;
+            vertical-align: top;
+
+        }
+        .unleash{
+            font-size: 60pt;
+            margin-top: 80px;
+            color: #2e8264;
+            background-color: #cee4b5;
+        }
+        .two{
+            width: 900px;
+            height: 1000px;
+            border-radius: 20px;
+        }
+        .b1{
+            font-size: 30pt;
+            border-radius: 20px;
+            color: white;
+            background-color: #2e8264;
+            border-color: green;
+            padding:5px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .b2{
+            font-size: 30pt;
+            border-radius: 20px;
+            color: #2e8264;
+            border-color: green;
+            background-color: #cee4b5;
+            padding:5px;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+/*-----------------------Popular Menus----------------------*/ 
+
+    .popmenu{
+        text-align: center;
+        color: #3c3e3d;
+        margin-left: 20px;
+        font-size: 50pt;
+    }
+    .b3{
+            font-size: 30pt;
+            border-radius: 50px;
+            color: white;
+            background-color: #2e8264;
+            border-color: green;
+            padding:5px;
+            margin-left: 1000px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        .b4{
+            font-size: 30pt;
+            border-radius: 50px;
+            color: white;
+            background-color: #2e8264;
+            border-color: green;
+            padding:5px;
+            margin-left: 20px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+/*-----------------------Pop Menu Card----------------------*/ 
+
+table{
+    margin: auto;
+}
+.card{
+    margin: 30px;
+}
+
+.card img {
+    width: 555px;
+    height: 580px;
+    border-radius: 20px;
+}
+
+.card button {
+    width: 555px;
+    padding: 10px;
+    background-color: #338265;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card .product-info {
+    background-color: #338265;
+    padding: 10px;
+}
+
+.card .product-info .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    background-color: #338265;
+}
+
+.card .product-info .price {
+    font-size: 14px;
+    color: white;
+    background-color: #338265;
+}
+
+.card .cart-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; /* Changed background color to white */
+    color: #338265; /* Changed text color to match button background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #338265;
+}
+
+/*-----------------------Best Categ----------------------*/ 
+    .bestmenu{
+        text-align: center;
+        font-size: 40pt;
+        
+    }
+    .bbbb{
+        text-align: center;
+        background-color: white;
+    }
+    .bestmenub{
+        margin-bottom: 20px;
+
+    }
+    .bestmenub button{
+        text-decoration: none;
+        margin: 0 1px;
+        font-size: 15pt;
+        padding: 6px;
+        position: relative;
+        border-radius: 15px;
+        background-color: white;
+        border: 0px;
+        cursor: pointer;
+
+    }
+    .bestmenub button:hover{
+        background-color: #338265;
+        border-radius: 20px;
+        color: white;
+        border: 1px solid #294c3b;
+    }
+
+    .burger-card {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        float: left;
+    }
+
+    .burger-card:last-child {
+        margin-right: 0;
+    }
+
+    .burger-card img {
+        width: 90px;
+        background-color: #fff;
+    }
+    .burger-card h3{
+        font-size: 18px;
+        background-color: #fff;
+    }
+    .burger-card p{
+        font-size: 13px;
+        background-color: #fff;
+        color: #3c3e3d;
+        text-align: justify;
+    }
+    .testall {
+        padding: 10px;
+        color: #338265;
+        background-color: #fff;
+        border: 1px solid #338265;
+        border-radius: 40px;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+/*-----------------------Image with Overlay----------------------*/ 
+    .sec-container{
+        position: relative;
+        margin-left: -13px;
+    }
+    .secsec img{
+        width: 1800px;
+        border-radius: 20px;
+        display: block;
+        margin: auto;
+        margin-bottom: 40pt;
+    }
+    .overlay{
+        position: absolute;
+        width: 250px;
+        top: 75%; 
+        left: 80%; 
+        transform: translate(-50%, -50%); 
+        border-radius: 20px;
+        background-color: white; 
+        color: #338265; 
+        padding: 10px 20px; 
+        font-size: 20px; 
+        }
+        .overlay h3{
+            background-color: white;
+        }
+
+
+        
+        .footer {
+            background-color: #0e2c24;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+            max-width: 1800px;
+            margin: auto;
+        }
+        .footer-content {
+            background-color: #0e2c24;
+            color: #fff;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .footer-content img{
+            background-color: #0e2c24;
+            margin-top: -40px;
+        }
+        .footer-content p{
+            background-color: #0e2c24;
+            color: #fff;
+            font-size: 14px;
+            display: block;
+            margin-top: 50px;
+        }
+        .footer-content pp{
+            background-color: #0e2c24;
+            color: #fff;
+            font-size: 16px;
+        }
+        .navigation {
+            margin-top: -40px;
+            margin-left: 380px;
+            justify-content: space-between;
+            background-color: #0e2c24;
+        }
+
+        .navigation li {
+            text-decoration: none;
+            display: inline-block;
+            float: right;
+            font-size: 16px;
+            padding: 6px;
+            background-color: #0e2c24;
+        }
+        .navigation li a {
+            text-decoration: none;
+            color: white;
+            background-color: #0e2c24;
+        }
+       
+        .footat{
+            margin-top: 20px;
+            background-color: #0e2c24;
+            display: ;
+        }
+        .footat tet{
+            font-size: 10px;
+        }
+        .footat lat{
+            margin-top: -20px;
+        }
+        .footat a{
+            text-decoration: none;
+            color: white;
+            font-size: 10px;
+            padding: 5px;
+            justify-content: space-between;
+            background-color: #0e2c24;
+        
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="navbar">
+    <div class="navbar-items">
+        <a href="sample.html">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+    <img class="logo" src="images/logo.png" alt="cart">
+    <div class="language-dropdown">
+        <a class="cartlugu" href="#"><img class="cart-logo" src="images/cart.png" alt="cart"></a>
+        
+    </div>
+</div>
+
+<div class="firstimg-container">
+    <div class="firstimg">
+        <img src="images/fimg.png">
+    </div>
+</div>
+
+<table class="text2">
+    <tr class="text2">
+        <td><img src="images/badge.png" alt="Quality Image"> Best Quality</td>
+        <td><img src="images/cart.png" alt="Quality Image">Easy To Order</td>
+        <td><img src="images/delivery.png" alt="Quality Image">Free Delivery</td>
+    </tr>
+</table>
+<div class="Secimg">
+        <div class="one">
+            <br>
+            <br><br><br><br><br>
+            <button class="b1">Get 25% off this week</button>
+            <h2 class="unleash">Unleash Your<br> Cravings, Not Your <br> Wallet!</h2>
+            <br>
+            <button class="b2">Get 25% off -></button>
+        </div>
+        <div class="two">
+        <img class="two" src="images/secimg2.png">
+        </div>
+    </div>
+
+<h2 class="popmenu">Our Popular Menus <button class="b3">&larr;</buttom>
+    <button class="b4">&rarr;</buttom></h2>
+    <table>
+        <tr>
+            <td>
+        <div class="card">
+            <img src="images/menu1.jpg" alt="Menu 1">
+            <button>
+                <div class="product-info">
+                    <span class="name">Product Name 1</span>
+                    <span class="price">$10</span>
+                </div>
+                <span class="cart-logo">&#x1F6D2;</span>
+            </button>
+        </div>
+        </td>
+        <td>
+        <div class="card">
+            <img src="images/menu2.jpg" alt="Menu 2">
+            <button>
+                <div class="product-info">
+                    <span class="name">Product Name 2</span>
+                    <span class="price">$12</span>
+                </div>
+                <span class="cart-logo">&#x1F6D2;</span>
+            </button>
+        </div>
+        </td>
+        <td>
+        <div class="card">
+            <img src="images/menu3.jfif" alt="Menu 3">
+            <button>
+                <div class="product-info">
+                    <span class="name">Product Name 3</span>
+                    <span class="price">$8</span>
+                </div>
+                <span class="cart-logo">&#x1F6D2;</span>
+            </button>
+        </div>
+    </td>
+    </tr>
+    </table>
+<h2 class="bestmenu">Best Categories We Have</h2>
+
+<div class="bbbb">
+<div class="bestmenub">
+    <button>Meat</button>
+    <button>Beer</button>
+    <button>Drink</button>
+</div>
+</div>
+
+<table width="1800px">
+<tr>
+    <td>
+    <div class="burger-card">
+        <img src="images/gmeat.png">
+        <h3>Grilled Meat</h3>
+        <p>Definition of the burger Definition of the burger Definition of the burger Definition of the burger Definition of the burger</p>        <button class="testall">Test All &rarr;</button>
+    </div>
+    </td>
+    <td>
+    <div class="burger-card">
+        <img src="images/pimgg.png">
+        <h3>Patties</h3>
+        <p>Definition of the burger Definition of the burger Definition of the burger Definition of the burger Definition of the burger</p>
+        <button class="testall">Test All &rarr;</button>
+    </div>
+    </td>
+    <td>
+    <div class="burger-card">
+        <img src="images/wing.png" alt="Burger 3">
+        <h3>Wings</h3>
+        <p>Definition of the burger Definition of the burger Definition of the burger Definition of the burger Definition of the burger</p>
+        <button class="testall">Test All &rarr;</button>
+    </div>
+    </td>
+</tr>
+<tr>
+    <td>
+    <div class="burger-card">
+        <img src="images/beer.png" alt="Burger 4">
+        <h3>Beer</h3>
+        <p>Definition of the burger Definition of the burger Definition of the burger Definition of the burger Definition of the burger</p>
+        <button class="testall">Test All &rarr;</button>
+    </div>
+    </td>
+    <td>
+    <div class="burger-card">
+        <img src="images/veg.png" alt="Burger 5">
+        <h3>Veggies</h3>
+        <p>Definition of the burger Definition of the burger Definition of the burger Definition of the burger Definition of the burger</p>
+        <button class="testall">Test All &rarr;</button>
+    </div>
+    </td>
+    <td>
+    <div class="burger-card">
+        <img src="images/drinks.png" alt="Burger 6">
+        <h3>Drinks</h3>
+        <p>Definition of the burger Definition of the burger Definition of the burger Definition of the burger Definition of the burger</p>
+        <button class="testall">Test All &rarr;</button>
+    </div>
+    </td>
+</tr>
+</table>
+
+<div class="sec-container">
+    <div class="secsec">
+        <img src="images/lastimg.png">
+    </div>
+    <div class="overlay">
+        
+        <h3>Burning Meaty Meat</h3>        <button class="testall">Order Now &rarr;</button>
+    </div>
+</div>
+
+<div class="Secimg">
+        <div class="one">
+            <br><br><br><br>
+            <h2 class="unleash">Eat all<br> Dont, Hold Back <br>Your <br>Wallet!</h2>
+            <br>
+        </div>
+        <div class="two">
+        <img class="two" src="images/lastimgg.png">
+        </div>
+    </div>
+<br>
+<div class="footer">
+    <div class="footer-content">
+            <img src="images/logo.png" alt="Logo" width="50px">
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        <p> 123 Honeymoon-Holyghost, Baguio City, Benguet, PH</p>
+        <p class="pp">Open: 7AM - 10PM</p>
+          <hr> 
+          <div class="footat"> 
+            <p class="tet"> @2024 GrilledLaureta. All rights reserved.</p>
+            <p class="lat" align="right"><a href="#">FACEBOOK</a><a href="#">INSTAGRAM</a><a href="#">X</a></p>
+          </div>
+</div>
+    
+</div>
+</body>
+</html>
