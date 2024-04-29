@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+    
+    <style>
+        body {
+            background: url("bg2.jpg") no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: transparent;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .header h1 {
+            margin: 0;
+            color: #fff;
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+           background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+           background-blend-mode: overlay;
+          -webkit-background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+          -webkit-background-blend-mode: overlay;
+            position: fixed;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #fff;
+        }
+        .main {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            margin-top: 160px;
+        }
+        .about-me {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    margin-top: 160px;
+}
+
+.about-me-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-me-image {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-image img {
+    width: 80%;
+    border-radius: 5%;
+}
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .about-me-content,
+    .about-me-image {
+        flex: none;
+        width: 100%;
+    }
+
+    .about-me-image img {
+        margin-top: 20px;
+    }
+}
+        .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 60px;
+            background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            background-blend-mode: overlay;
+            -webkit-background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            -webkit-background-blend-mode: overlay;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .footer p {
+            color: #fff;
+            font-size: 0.9rem;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+    <h1>About Me</h1>
+</header>
+
+<nav class="nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="prelims.html" class="nav-link">Prelims</a>
+    <a href="midterms.html" class="nav-link">Midterms</a>
+    <a href="finals.html" class="nav-link">Finals</a>
+</nav>
+
+<main class="main about-me">
+    <div class="about-me-content">
+        <h2>ZEUS CLYDE R. LAURETA</h2>
+        <p>ID: 20201103</p>
+        <p>Course: BSIT</p>
+        <p>Year: 3rd Year</p>
+        <p>Birthdate: 08/08/2001</p>
+        <p>Subject: HUMCOM1</p>
+        <p>Contact: <a style="text-decoration: none; color: white;" href="mailto:20201103@s.ubaguio.edu">20201103@s.ubaguio.edu</a></p>
+    </div>
+    <div class="about-me-image">
+        <img src="images/icon.png" alt="Zeus Clyde Laureta">
+    </div>
+</main>
+
+
+</body>
+<footer class="footer">
+    <p>&copy; 2024 Laureta HUMCOM1 Portfolio. All rights reserved.</p>
+</footer>
+</html>
