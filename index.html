@@ -104,11 +104,32 @@
  			 color: #fff;
 		}
 		.card img {
-            width: 80%; /* Adjust image size as needed */
-            border-radius: 5%; /* Adjust border-radius for circular images */
-            background: rgba(255, 255, 255, 0.2);
+	            width: 80%; /* Adjust image size as needed */
+	            border-radius: 5%; /* Adjust border-radius for circular images */
+	            background: rgba(255, 255, 255, 0.2);
+	
+	        }
+		.footer {
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    height: 60px;
+		    background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+		    background-blend-mode: overlay;
+		    -webkit-background-image: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+		    -webkit-background-blend-mode: overlay;
+		    position: fixed;
+		    bottom: 0;
+		    left: 0;
+		    width: 100%;
+		    z-index: 1000;
+		}
 
-        }
+		.footer p {
+		    color: #fff;
+		    font-size: 0.9rem;
+		    margin: 0;
+		}
 	</style>
 </head>
 <body>
@@ -150,4 +171,7 @@
 		</a>
 </main>
 </body>
+<footer class="footer">
+    <p>&copy; 2024 Laureta HUMCOM1 Portfolio. All rights reserved.</p>
+</footer>
 </html>
